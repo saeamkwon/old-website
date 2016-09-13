@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+
+<h1 class="contact-title">Contact Me</h1>
+
+<script>
+  function validateForm() {
+    console.log('hi');
+
+    var name = document.forms["contact-me"][name].value;
+    var email = document.forms["contact-me"][_replyto].value;
+
+    if (name == null || name == "") {
+      $("#failure").toggleClass("hidden");
+      return false;
+    } else if (email == null || email == "") {
+      $("#failure").toggleClass("hidden");
+      return false;
+    } else {
+      $("#success").toggleClass("hidden");
+      return true;
+    }
+  }
+</script>
+
+
+<div id="success" class="hidden">
+  <div class="alert alert-success">
+    <span class="glyphicon glyphicon-send"></span>
+    Success! Message sent.
+  </div>
+</div>
+
+
+<div id="failure" class="hidden">
+  <div class="alert alert-danger">
+    <span class="glyphicon glyphicon-alert"></span>
+    Error! Please check the inputs.
+  </div>
+</div>
+
+<form name="contact-me" method="post" action="http:formspree.io/saeamkwon@gmail.com" onsubmit="validateForm();">
+  <label>Name</label>
+    <input name="name" placeholder="Name">
+
+  <label>E-mail</label>
+    <input name="_replyto" type="text" placeholder="E-mail">
+
+  <label>Message</label>
+    <textarea name="message" placeholder="Message Here"></textarea>
+
+  <input type="hidden" name="_format" value="plain" />
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="hidden" name="_subject" value="New submission!" />
+  <input type="hidden" name="_next" value="//site.io/thanks.html" />
+
+  <button type="submit">Submit</button>
+</form>
+
