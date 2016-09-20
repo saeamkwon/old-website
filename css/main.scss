@@ -54,7 +54,63 @@ $on-laptop:        800px;
 }
 
 
+//-----ABOUT ME-----//
+
+.about-me-title {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  border: 0px;
+  box-shadow: none;
+  display: inline-block;
+}
+
+
+//-----PORTFOLIO-----//
+
+.portfolio-title {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+//-----BLOG-----//
+
+.blog-title {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  color: #d1d1d1;
+}
+
+.inside-title {
+  font-size: 44px;
+  color: #000000;
+}
+
+
+//-----PHOTOGRAPHY-----//
+
+.photo-title {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 //-----CONTACT ME-----//
+
+.contact-title {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 label {
   display: block;
